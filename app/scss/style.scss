@@ -12,25 +12,6 @@
         padding: 22px 0;
     }
 
-    &__content {
-        text-align: center;
-        min-height: calc(100vh - 80px);
-        background-color: black;
-        display: flex;
-        align-items: center;
-    }
-
-    &__title {
-        display: block;
-        max-width: 685px;
-        width: 100%;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 1.4;
-        margin-bottom: 30px;
-    }
 }
 
 .menu {
@@ -83,6 +64,29 @@
         top: 2px;
         width: 10px;
         height: 16px;
+    }
+}
+
+.hero {
+
+    text-align: center;
+    min-height: calc(100vh - 80px);
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+
+    &__title {
+        display: block;
+        max-width: 685px;
+        width: 100%;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        letter-spacing: 0.06em;
     }
 }
 
@@ -181,7 +185,7 @@
 .footer {
     padding: 60px 0;
     background-color: black;
-    
+
     &__logo {
         margin-bottom: 23px;
     }
