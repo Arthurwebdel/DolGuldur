@@ -5,99 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DolGuldur</title>
-    <link rel="icon" type="image/png" sizes="40x40" href="img/favicon/favicon.png">
+    <title>Web Studio DolGuldur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="40x40" href="img/favicon/favicon.png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <nav class="menu">
-                    <a class="logo" href="#">
-                        <img class="logo__img" src="img/logo.png" alt="logo">
-                    </a>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Our Works
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="menu__contacts">
-                    <a class="menu__email" href="mailto:info@dolguldur.com">
-                        <svg class="menu__email-icon">
-                            <use href="img/icons/contacts.svg#icon-envelope"></use>
-                        </svg>
-                        info@dolguldur.com
-                    </a>
-                    <a class="menu__phone" href="tel:+380961111111">
-                        <svg class="menu__phone-icon">
-                            <use href="img/icons/contacts.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </div>
+        <div class="container header__container">
+            <nav class="menu">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="img/logo.svg" alt="logo DolGuldur">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a class="header__contacts-link" href="mailto:info@dolguldur.com">
+                    <svg class="header__contacts-icon" width="16" height="12">
+                        <use href="img/icons/contacts.svg#icon-envelope"></use>
+                    </svg>
+                    info@dolguldur.com
+                </a>
+                <a class="header__contacts-link" href="tel:+380961111111">
+                    <svg class="header__contacts-icon" width="10" height="16">
+                        <use href="img/icons/contacts.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
             </div>
         </div>
     </header>
     <main class="main">
+        <h1 class="hidden">Web Studio DolGuldur</h1>
         <section class="hero">
-            <div class="container">
-                <span class="hero__title">
-                    author's forge where your sites are created
-                </span>
-                <a class="btn" href="#">
-                    Go to order
-                </a>
+            <div class="container hero__container">
+                <div class="hero__inner">
+                    <h2 class="hero__title">
+                        author's forge where your sites are created
+                    </h2>
+                    <a class="btn" href="#">
+                        Go to order
+                    </a>
+                </div>
             </div>
         </section>
         <section class="about section">
+            <h2 class="hidden">Advantages</h2>
             <div class="container">
                 <ul class="about__list">
                     <li class="about__item">
-                        <span class="about__title">
+                        <h3 class="about__title">
                             Effective team
-                        </span>
+                        </h3>
                         <p class="about__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                         </p>
                     </li>
                     <li class="about__item">
-                        <span class="about__title">
+                        <h3 class="about__title">
                             punctuality
-                        </span>
+                        </h3>
                         <p class="about__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                         </p>
                     </li>
                     <li class="about__item">
-                        <span class="about__title">
+                        <h3 class="about__title">
                             planning
-                        </span>
+                        </h3>
                         <p class="about__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                         </p>
                     </li>
                     <li class="about__item">
-                        <span class="about__title">
+                        <h3 class="about__title">
                             innovation
-                        </span>
+                        </h3>
                         <p class="about__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                         </p>
@@ -107,31 +109,30 @@
         </section>
         <section class="services">
             <div class="container">
-                <h1 class="hidden"></h1>
                 <h2 class="title">
                     Our services
                 </h2>
                 <ul class="services__list">
-                    <li class="services__item" >
-                        <a class="services__link" href="#" style="background-image:url(img/services__bg1.png) ;">
-                            <span class="services__apps">
-                                desktop apps
-                            </span>
-                        </a>
-                    </li>
-                    <li class="services__item" >
-                        <a class="services__link" href="#" style="background-image:url(img/services__bg2.png) ;">
-                            <span class="services__apps">
-                                mobile apps
-                            </span>
-                        </a>
+                    <li class="services__item">
+                        <img class="services__img" src="img/desktop.jpg" alt="desktop">
+                        <span class="services__title">
+                            desktop apps
+                        </span>
+
                     </li>
                     <li class="services__item">
-                        <a class="services__link" href="#"  style="background-image:url(img/services__bg3.png) ;">
-                            <span class="services__apps">
-                                modern design
-                            </span>
-                        </a>
+                        <img class="services__img" src="img/mobile.jpg" alt="mobile">
+                        <span class="services__title">
+                            mobile apps
+                        </span>
+
+                    </li>
+                    <li class="services__item">
+                        <img class="services__img" src="img/design.jpg" alt="design">
+                        <span class="services__title">
+                            modern design
+                        </span>
+
                     </li>
                 </ul>
             </div>
@@ -145,45 +146,45 @@
                     <li class="team__item">
                         <img class="team__img" src="img/paul-castanie.jpg" alt="Paul Castanie">
                         <div class="team__info">
-                            <span class="team__name">
+                            <h3 class="team__name">
                                 Paul Castanie
-                            </span>
-                            <span class="team__profession">
+                            </h3>
+                            <p class="team__profession">
                                 Product Designer
-                            </span>
+                            </p>
                         </div>
                     </li>
                     <li class="team__item">
                         <img class="team__img" src="img/Joanna.jpg" alt="Joanna Nix">
                         <div class="team__info">
-                            <span class="team__name">
+                            <h3 class="team__name">
                                 Joanna Nix
-                            </span>
-                            <span class="team__profession">
+                            </h3>
+                            <p class="team__profession">
                                 Frontend Developer
-                            </span>
+                            </p>
                         </div>
                     </li>
                     <li class="team__item">
                         <img class="team__img" src="img/Aldo.jpg" alt="Aldo Delara">
                         <div class="team__info">
-                            <span class="team__name">
+                            <h3 class="team__name">
                                 Aldo Delara
-                            </span>
-                            <span class="team__profession">
+                            </h3>
+                            <p class="team__profession">
                                 Marketing
-                            </span>
+                            </p>
                         </div>
                     </li>
                     <li class="team__item">
                         <img class="team__img" src="img/oladimeji-odunsi.jpg" alt="Oladimeji Odunsi">
                         <div class="team__info">
-                            <span class="team__name">
+                            <h3 class="team__name">
                                 Oladimeji Odunsi
-                            </span>
-                            <span class="team__profession">
+                            </h3>
+                            <p class="team__profession">
                                 UI Designer
-                            </span>
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -191,26 +192,30 @@
         </section>
     </main>
     <footer class="footer">
-<div class="container">
-    <a class="footer__logo logo" href="#">
-        <img class="logo__img" src="img/logo__footer.png" alt="logo">
-    </a>
-    <span class="footer__address">
-        14 Green St., Belmont, Boston. USA
-    </span>
-    <div class="footer__contacts">
-        <a class="footer__email" href="mailto:info@dolguldur.com">
-            info@dolguldur.com
-        </a>
-        <a class="footer__phone" href="tel:+380961111111">
-            +38 096 111 11 11
-        </a>
-    </div>
-</div>
+        <div class="container">
+            <div class="footer__contacts-info">
+                <a class="footer__logo logo" href="#">
+                    <img class="logo__img" src="img/logo__white.svg" alt="logo">
+                </a>
+                <address class="footer__address-info">
+                    <span class="footer__address">
+                        14 Green St., Belmont, Boston. USA
+                    </span>
+                    <div class="footer__contacts">
+                        <a class="footer__contacts-link" href="mailto:info@dolguldur.com">
+                            info@dolguldur.com
+                        </a>
+                        <a class="footer__contacts-link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </div>
+                </address>
+            </div>
+        </div>
     </footer>
 
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

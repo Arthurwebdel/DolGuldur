@@ -1,4 +1,4 @@
-@import 'vars';
+
 
 body {
     min-height: 100vh;
@@ -10,6 +10,8 @@ body {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: $dark;
+    background-color: #fff;
+    line-height: 1.2;
 }
 
 .container {
@@ -42,8 +44,13 @@ body {
 
 .hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   }
