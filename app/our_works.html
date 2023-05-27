@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio DolGuldur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="40x40" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="menu">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="img/logo.svg" alt="logo DolGuldur">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="our_works.html">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a class="header__contacts-link" href="mailto:info@dolguldur.com">
+                    <svg class="header__contacts-icon" width="16" height="12">
+                        <use href="img/icons/contacts.svg#icon-envelope"></use>
+                    </svg>
+                    info@dolguldur.com
+                </a>
+                <a class="header__contacts-link" href="tel:+380961111111">
+                    <svg class="header__contacts-icon" width="10" height="16">
+                        <use href="img/icons/contacts.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h2 class="hidden">Our works</h2>
+        <section class="works section">
+            <div class="container">
+                <ul class="works__list">
+                    <li class="works__item">
+                        <button class="works__btn" data-filter="all">
+                            All
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__btn"  data-filter=".category-a">
+                            Web-sites
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__btn"  data-filter=".category-b">
+                            Apps
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__btn"  data-filter=".category-c">
+                            Designes
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__btn"  data-filter=".category-d">
+                            Brands
+                        </button>
+                    </li>
+                </ul>
+                <ul class="works__gallery">
+                    <li class="works__gallery-item mix category-a">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/sofa_world.jpg" alt="Sofa World - Web-site" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Sofa World
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Web-site
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-d">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/caffee.jpg" alt="Moby Dick Caffe- Brand" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Moby Dick Caffe
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Brand
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-b">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/tesla.jpg" alt="Tesla charger-map App" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Tesla charger-map
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    App
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-c">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/bronze_sky.jpg" alt="Bronze Sky - Design" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Bronze Sky
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Design
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-c">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/travel_magazine.jpg" alt="Cereal Travel Magazine" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Cereal Travel Magazine
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Design
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-b">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/photonium_app.jpg" alt="Photonium App" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Photonium
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    App
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-d">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/keep_exploring.jpg" alt="Keep Exploring Brand" class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Keep Exploring
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Brand
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-c">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/architecture.jpg" alt="Architectural conceptual projects"
+                                class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Architectural conceptual projects
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Design
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works__gallery-item mix category-a">
+                        <a class="works__gallery-link" href="#">
+                            <img src="img/gallery/food_service.jpg" alt="Le Buzz food service - Web-site"
+                                class="works__img">
+                            <div class="works__info">
+                                <h3 class="works__title">
+                                    Le Buzz food service
+                                </h3>
+                                <h4 class="works__subtitle">
+                                    Web-site
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contacts-info">
+                <a class="footer__logo logo" href="#">
+                    <img class="logo__img" src="img/logo__white.svg" alt="logo">
+                </a>
+                <address class="footer__location-info">
+                    <span class="footer__location">
+                        14 Green St., Belmont, Boston. USA
+                    </span>
+                    <div class="footer__contacts">
+                        <a class="footer__contacts-link" href="mailto:info@dolguldur.com">
+                            info@dolguldur.com
+                        </a>
+                        <a class="footer__contacts-link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
