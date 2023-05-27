@@ -4,7 +4,7 @@
 
 
 .header {
-
+    border: 1px solid #ECECEC;
     padding: 22px 0;
 
     &__container {
@@ -13,6 +13,7 @@
     }
 
     &__contacts {
+        font-size: 14px;
         margin-left: auto;
         display: flex;
     }
@@ -28,6 +29,7 @@
     }
 
     &__contacts-icon {
+        fill: $light;
         margin-right: 10px;
     }
 
@@ -40,7 +42,6 @@
 
     &__list {
         display: flex;
-        flex-grow: 1;
         margin-left: 89px;
     }
 
@@ -59,7 +60,7 @@
     background-color: #000;
 
     &__container {
-        height: 600px;
+        min-height: 56vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,6 +83,8 @@
 }
 
 .about {
+    text-align: left;
+
     &__list {
         display: flex;
         justify-content: space-between
@@ -108,7 +111,7 @@
 
 .services {
     text-align: center;
-    padding-bottom: 94px;
+    padding-top: 0;
 
     &__list {
         display: flex;
@@ -128,14 +131,19 @@
         left: 0;
         right: 0;
         background-color: rgba(47, 48, 58, 0.6);
+        font-weight: 400;
         color: #fff;
         text-transform: uppercase;
     }
 }
 
 .team {
-    text-align: center;
     background-color: #F5F4FA;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__item {
         max-width: 270px;
@@ -143,11 +151,6 @@
         background-color: #fff;
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
         border-radius: 0 0 4px 4px;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
     }
 
     &__info {
@@ -171,17 +174,17 @@
         margin-bottom: 23px;
     }
 
-    &__address-info {
+    &__location-info {
         font-size: 14px;
     }
 
-    &__address {
+    &__location {
         display: block;
         color: #fff;
         margin-bottom: 10px;
     }
 
-    &__contacts {
+    &__contacts-link {
         color: #F29040;
     }
 
@@ -190,20 +193,57 @@
     }
 }
 
+.works {
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
 
+    &__btn {
+        padding: 11px 26px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        line-height: 1;
+        color: $dark;
+        transition: background-color .5s, color .5s;
+    }
 
+    &__btn.mixitup-control-active {
+        background-color: #EC3C05;
+        color: #fff;
+    }
 
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
 
+    &__info {
+        padding: 20px 24px;
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color: $light;
+        text-align: left;
+    }
 
+    &__title {
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 5px;
+        color: $dark;
+    }
 
-
-
-
-
-
-
-
-
-
+    &__subtitle {
+        font-size: 16px;
+        color: $light;
+        line-height: 1.9;
+    }
+}
 
