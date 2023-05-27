@@ -224,12 +224,28 @@
         grid-gap: 30px;
     }
 
+    &__gallery-link {
+        position: relative;
+    }
+
+    &__gallery-link:hover .works__text {
+        visibility: visible;
+        bottom: 28%;
+        height: 294px;
+        background-color: rgba(236, 60, 5, 0.8);
+        color: #fff;
+        white-space: inherit;
+    }
+
     &__info {
         padding: 20px 24px;
         border-width: 0px 1px 1px 1px;
         border-style: solid;
         border-color: $light;
         text-align: left;
+        position: relative;
+        background-color: #fff;
+        z-index: 5;
     }
 
     &__title {
@@ -245,5 +261,23 @@
         color: $light;
         line-height: 1.9;
     }
-}
 
+    &__text {
+        max-width: 370px;
+        height: 0;
+        position: absolute;
+        visibility: hidden;
+        left: 0;
+        bottom: -100px;
+        padding: 63px 24px;
+        transition: bottom 0.5s, height 1s, background-color 1s, color 1s, white-space 1s;
+        background-color: transparent;
+        color: transparent;
+        font-size: 18px;
+        line-height: 1.6;
+        z-index: 2;
+
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
