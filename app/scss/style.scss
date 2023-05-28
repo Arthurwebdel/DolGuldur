@@ -226,15 +226,11 @@
 
     &__gallery-link {
         position: relative;
+        overflow: hidden;
     }
 
     &__gallery-link:hover .works__text {
-        visibility: visible;
-        bottom: 28%;
-        height: 294px;
-        background-color: rgba(236, 60, 5, 0.8);
-        color: #fff;
-        white-space: inherit;
+        transform: translateY(0%);
     }
 
     &__info {
@@ -263,21 +259,18 @@
     }
 
     &__text {
-        max-width: 370px;
-        height: 0;
         position: absolute;
-        visibility: hidden;
+        top: 0;
         left: 0;
-        bottom: -100px;
+        transform: translateY(100%);
+        width: 100%;
+        height: 100%;
         padding: 63px 24px;
-        transition: bottom 0.5s, height 1s, background-color 1s, color 1s, white-space 1s;
-        background-color: transparent;
-        color: transparent;
+        background-color: rgba(236, 60, 5, 0.8);
         font-size: 18px;
         line-height: 1.6;
-        z-index: 2;
+        color: #fff;
+        transition: transform 0.5s;
 
-        overflow: hidden;
-        white-space: nowrap;
     }
 }
