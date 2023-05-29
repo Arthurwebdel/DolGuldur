@@ -56,8 +56,30 @@
 
 }
 
+.slider {
+    &__inner-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 56vh;
+    }
+
+    &__inner-img::before {
+        content: '';
+        min-height: 56vh;
+        width: 100%;
+        background-color: rgba(47, 48, 58, 0.6);
+        position: absolute;
+    }
+}
+
 .hero {
-    background-color: #000;
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
 
     &__container {
         min-height: 56vh;
@@ -80,6 +102,7 @@
         margin-bottom: 30px;
         letter-spacing: 0.06em;
     }
+
 }
 
 .about {
