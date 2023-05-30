@@ -1,5 +1,10 @@
 $(function () {
-    $('.slider__inner').slick({
+    $(".menu [href]").each(function () {
+        if (this.href == window.location.href) {
+            $(this).addClass("current");
+        }
+    });
+    $('.hero__background-box').slick({
         fade:true,
         autoplay: true,
         autoplaySpeed: 3000
@@ -8,5 +13,4 @@ $(function () {
    $('.works__gallery').mixitup({
 
    });
-  
 });

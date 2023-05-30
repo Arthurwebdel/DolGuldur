@@ -1,0 +1,90 @@
+.works {
+    &__filter {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__btn {
+        padding: 11px 26px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        line-height: 1;
+        color: $dark;
+        transition: background-color 0.5s, color 0.5s;
+
+        &.mixitup-control-active {
+            background-color: #EC3C05;
+            color: #fff;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__gallery-item {
+        width: calc((100% - 2 * 30px) / 3);
+    }
+
+    &__gallery-link {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+
+        &:hover {
+            .works__text {
+                transform: translateY(0%);
+            }
+
+        }
+    }
+
+    &__info {
+        padding: 20px 24px;
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color: $light;
+        position: relative;
+        background-color: #fff;
+        z-index: 5;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 5px;
+        color: $dark;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        color: $light;
+        line-height: 1.9;
+    }
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        width: 100%;
+        height: 100%;
+        padding: 63px 24px;
+        background-color: rgba(236, 60, 5, 0.8);
+        font-size: 18px;
+        line-height: 1.6;
+        color: #fff;
+        transition: transform 0.5s;
+
+    }
+}
