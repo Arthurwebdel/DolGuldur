@@ -16,18 +16,40 @@
     }
 
     &__location-info {
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
         flex-grow: 1;
     }
 
     &__location {
-        display: block;
         color: #fff;
         margin-bottom: 10px;
     }
 
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        max-width: 141px;
+    }
+
     &__contacts-link {
+        display: inline-block;
         color: #F29040;
+        border: 1px solid transparent;
+        transition: color 0.5s;
+        &:hover {
+            color: $orange;
+        }
+
+        &:focus {
+            border: 1px solid $orange;
+            border-radius: 4px;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
     }
 
     &__contacts-link:not(:last-child) {
@@ -57,7 +79,17 @@
         height: 44px;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
+        transition: background-color 0.5s, outline 0.5s;
+        outline-offset: 2px;
+        outline: 1px solid transparent;
 
+        &:hover {
+            background-color: $orange;
+        }
+        &:focus {
+            outline: 1px solid $orange;
+
+        }
     }
 
     &__social-icon {

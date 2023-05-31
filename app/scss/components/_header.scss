@@ -16,6 +16,25 @@
         color: $light;
         display: flex;
         align-items: center;
+        padding: 2px 2px;
+        border: 1px solid transparent;
+        transition: border 0.5s, color 0.5s;
+
+        &:hover .header__contacts-icon {
+            fill: $orange;
+        }
+
+        &:hover {
+            color: $orange;
+        }
+
+        &:focus {
+            border: 1px solid $orange;
+            border-radius: 4px;
+        }
+        &:active {
+            opacity: 0.7;
+        }
 
         &:not(:last-child) {
             margin-right: 45px;
@@ -25,6 +44,7 @@
     &__contacts-icon {
         fill: $light;
         margin-right: 10px;
+        transition: fill 0.5s;
     }
 
 }
@@ -47,9 +67,26 @@
     &__link {
         line-height: 1.2;
         position: relative;
-        padding: 32px 0;
+        padding: 32px 3px;
+        transition: color 0.5s, border 0.5s;
+        border: 1px solid transparent;
+       
+        &:hover {
+            color: $orange;
+        }
+
+        &:focus {
+            border: 1px solid $orange;
+            border-radius: 4px;
+        }
+
+        &:active {
+            color: rgba(236, 60, 5, 0.7);
+        }
 
         &.current {
+            color: $orange;
+
             &::before {
                 content: '';
                 position: absolute;
@@ -58,6 +95,7 @@
                 width: 100%;
                 height: 4px;
                 background-color: $orange;
+
             }
         }
     }

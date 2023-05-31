@@ -62,7 +62,7 @@
                     <h2 class="hero__title">
                         author's forge where your sites are created
                     </h2>
-                    <button class="btn" type="button">
+                    <button class="btn" type="button" data-modal-open>
                         Go to order
                     </button>
                 </div>
@@ -314,34 +314,46 @@
                 </h2>
                 <ul class="partners__list">
                     <li class="partners__item">
-                        <svg class="team__social-icon" width="60" height="23">
-                            <use href="img/icons/icons.svg#rails"></use>
-                        </svg>
+                        <a href="" class="partners__link">
+                            <svg class="partners__icon" width="60" height="23">
+                                <use href="img/icons/icons.svg#rails"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="partners__item">
-                        <svg class="team__social-icon" width="60" height="23">
-                            <use href="img/icons/icons.svg#gpay"></use>
-                        </svg>
+                        <a href="" class="partners__link">
+                            <svg class="partners__icon" width="60" height="23">
+                                <use href="img/icons/icons.svg#gpay"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="partners__item">
-                        <svg class="team__social-icon" width="60" height="47">
-                            <use href="img/icons/icons.svg#ps"></use>
-                        </svg>
+                        <a href="" class="partners__link">
+                            <svg class="partners__icon" width="60" height="47">
+                                <use href="img/icons/icons.svg#ps"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="partners__item">
-                        <svg class="team__social-icon" width="60" height="24">
-                            <use href="img/icons/icons.svg#pay"></use>
-                        </svg>
+                        <a href="" class="partners__link">
+                            <svg class="partners__icon" width="60" height="24">
+                                <use href="img/icons/icons.svg#pay"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="partners__item">
-                        <svg class="team__social-icon" width="60" height="23">
-                            <use href="img/icons/icons.svg#npm"></use>
-                        </svg>
+                        <a href="" class="partners__link">
+                            <svg class="partners__icon" width="60" height="23">
+                                <use href="img/icons/icons.svg#npm"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="partners__item">
-                        <svg class="team__social-icon" width="60" height="46">
-                            <use href="img/icons/icons.svg#uber_eats"></use>
-                        </svg>
+                        <a href="" class="partners__link">
+                            <svg class="partners__icon" width="60" height="46">
+                                <use href="img/icons/icons.svg#uber_eats"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -404,7 +416,15 @@
             </div>
         </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal__btn-close" type="button" data-modal-close>
+                <svg class="modal__btn-icon" width="15" height="15">
+                    <use href="img/icons/icons.svg#icon-close_btn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <script src="js/main.min.js"></script>
 </body>

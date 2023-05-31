@@ -154,8 +154,33 @@
         margin-bottom: 42px;
     }
 
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid transparent;
+       border-radius: 50%;
+       transition: background-color 0.5s, fill 0.5s, border 0.5s, box-shadow 0.3s ;
+       &:hover {
+        .team__social-icon {
+            fill: #fff;
+        }
+        background-color: $orange;
+       }
+       &:focus {
+        border: 1px solid $orange;
+       }
+       
+       &:active {
+        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+       }
+    }
+
     &__social-icon {
         fill: $light;
+        transition: fill 0.5s;
     }
 }
 
@@ -166,13 +191,101 @@
     }
 
     &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         max-width: 170px;
         width: 100%;
         height: 92px;
-        border: 1px solid #757575;
+
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $light;
         border-radius: 4px;
+        transition: border 0.5s, outline 0.5s, opacity 0.5s;
+        outline: 1px solid transparent;
+
+        &:hover {
+            .partners__icon {
+                fill: $orange;
+            }
+
+            border: 1px solid $orange;
+        }
+
+        &:focus {
+            outline: 1px solid $orange;
+            outline-offset: 4px;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    &__icon {
+        fill: $light;
+        transition: fill 0.5s;
+    }
+
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding: 94px 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: opacity 0.5s;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+    min-height: 581px;
+    width: calc(100% - 30px);
+    max-width: 528px;
+    background-color: #fff;
+    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    transition: transform 0.5s, scale 0.5s;
+
+    &__btn-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        padding: 5;
+        top: 8px;
+        right: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &__open {
+        overflow: hidden;
     }
 }
