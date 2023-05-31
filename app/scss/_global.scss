@@ -70,3 +70,18 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.logo {
+    border: 1px solid transparent;
+    transition: border 0.5s, opacity 0.5s;
+&:hover {
+    opacity: 0.8;
+}
+&:focus {
+    border: 1px solid $orange;
+    border-radius: 4px;
+}
+&:active {
+    opacity: 0.5;
+}
+}
