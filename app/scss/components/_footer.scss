@@ -38,6 +38,7 @@
         color: #F29040;
         border: 1px solid transparent;
         transition: color 0.5s;
+
         &:hover {
             color: $orange;
         }
@@ -61,38 +62,5 @@
         color: #fff;
         text-transform: uppercase;
         font-size: 14px;
-    }
-
-    &__social-list {
-        display: flex;
-    }
-
-    &__social-item:not(:last-child) {
-        margin-right: 10px;
-    }
-
-    &__social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        transition: background-color 0.5s, outline 0.5s;
-        outline-offset: 2px;
-        outline: 1px solid transparent;
-
-        &:hover {
-            background-color: $orange;
-        }
-        &:focus {
-            outline: 1px solid $orange;
-
-        }
-    }
-
-    &__social-icon {
-        fill: #fff;
     }
 }
