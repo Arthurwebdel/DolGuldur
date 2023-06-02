@@ -90,12 +90,11 @@ body {
 }
 
 .social {
-    &__list {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        gap: 10px;
-    }
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+
 
     &__link {
         display: flex;
@@ -124,11 +123,15 @@ body {
         }
     }
 
-    &__link--footer {
+    &__link--white {
         background-color: rgba(255, 255, 255, 0.1);
         outline-offset: 2px;
         outline: 1px solid transparent;
         transition: background-color 0.5s, outline 0.5s;
+
+        .social__icon {
+            fill: #fff;
+        }
 
         &:focus {
             outline: 1px solid $orange;
@@ -141,7 +144,5 @@ body {
         transition: fill 0.5s;
     }
 
-    &__icon--footer {
-        fill: #fff;
-    }
+
 }
