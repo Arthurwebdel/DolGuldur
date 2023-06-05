@@ -10,6 +10,10 @@ body {
     color: $dark;
     background-color: #fff;
     line-height: 1.2;
+   
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -72,15 +76,16 @@ body {
 }
 
 .logo {
-    border: 1px solid transparent;
-    transition: border 0.5s, opacity 0.5s;
+    outline: 1px solid transparent;
+    outline-offset: 2px;
+    transition: outline 0.5s, opacity 0.5s;
 
     &:hover {
         opacity: 0.8;
     }
 
     &:focus {
-        border: 1px solid $orange;
+        outline: 1px solid $orange;
         border-radius: 4px;
     }
 
@@ -102,9 +107,10 @@ body {
         align-items: center;
         width: 44px;
         height: 44px;
-        border: 1px solid transparent;
+        outline-offset: 2px;
+        outline: 1px solid transparent;
         border-radius: 50%;
-        transition: background-color 0.5s, fill 0.5s, border 0.5s, box-shadow 0.3s;
+        transition: background-color 0.5s, outline 0.5s, box-shadow 0.3s;
 
         &:hover {
             .social__icon {
@@ -115,33 +121,27 @@ body {
         }
 
         &:focus {
-            border: 1px solid $orange;
+            outline: 1px solid $orange;
         }
 
         &:active {
+            background-color: $orange;
             box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
         }
-    }
 
-    &__link--white {
-        background-color: rgba(255, 255, 255, 0.1);
-        outline-offset: 2px;
-        outline: 1px solid transparent;
-        transition: background-color 0.5s, outline 0.5s;
-
-        .social__icon {
-            fill: #fff;
+        &--white {
+            background-color: rgba(255, 255, 255, 0.1);
+    
+            .social__icon {
+                fill: #fff;
+            }
+        }
+    
+        &__icon {
+            fill: $light;
+            transition: fill 0.5s;
         }
 
-        &:focus {
-            outline: 1px solid $orange;
-
-        }
-    }
-
-    &__icon {
-        fill: $light;
-        transition: fill 0.5s;
     }
 
 

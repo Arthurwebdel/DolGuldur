@@ -1,10 +1,10 @@
 $(function () {
     $('.btn').on('click', function () {
-        $('body').addClass('modal__open');
+        $('body').addClass('lock');
        });
 
     $('.modal__btn-close').on('click', function () {
-        $('body').removeClass('modal__open');
+        $('body').removeClass('lock');
        });   
 
     $(".menu [href]").each(function () {

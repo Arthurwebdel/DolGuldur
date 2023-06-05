@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body data-body>
     <header class="header">
         <div class="container header__container">
             <nav class="menu">
@@ -73,6 +73,16 @@
                     <div class="hero__background-img" style="background-image:url('img/hero_bg/img1.jpg') ;"></div>
                     <div class="hero__background-img" style="background-image:url('img/hero_bg/img2.jpg') ;"></div>
                     <div class="hero__background-img" style="background-image:url('img/hero_bg/img3.jpg') ;"></div>
+                </div>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal__btn-close" type="button" data-modal-close>
+                        <span class="hidden">close window</span>
+                        <svg class="modal__btn-icon" width="15" height="15">
+                            <use href="img/icons/icons.svg#icon-close_btn"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -448,15 +458,6 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="modal__btn-close" type="button" data-modal-close>
-                <svg class="modal__btn-icon" width="15" height="15">
-                    <use href="img/icons/icons.svg#icon-close_btn"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
 
     <script src="js/main.min.js"></script>
 </body>

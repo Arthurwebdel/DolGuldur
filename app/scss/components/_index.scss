@@ -226,29 +226,43 @@
     transform: translate(-50%, -50%) scale(1);
     padding: 40px;
     min-height: 581px;
-    width: calc(100% - 30px);
     max-width: 528px;
+    width: 100%;
     background-color: #fff;
     box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.12);
     border-radius: 6px;
-    transition: transform 0.5s, scale 0.5s;
+    transition: transform 0.5s, scale 0.5s, visibility 0.5s;
+
+    &__btn-icon {
+        transition: fill 0.5s;
+    }
 
     &__btn-close {
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        padding: 5;
         top: 8px;
         right: 8px;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
+        transition: box-shadow 0.5s;
+        
+        &:hover {
+            .modal__btn-icon {
+                fill: $orange;
+            }
+        }
+
+        &:focus {
+            outline: 1px solid $orange;
+        }
+
+        &:active {
+            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.12);
+        }
     }
 
-    &__open {
-        overflow: hidden;
-    }
 }
