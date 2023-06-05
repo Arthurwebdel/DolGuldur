@@ -99,7 +99,11 @@ body {
     justify-content: center;
     width: 100%;
     gap: 10px;
-
+   
+    &__icon {
+        fill: $light;
+        transition: fill 0.5s;
+    }
 
     &__link {
         display: flex;
@@ -135,11 +139,6 @@ body {
             .social__icon {
                 fill: #fff;
             }
-        }
-    
-        &__icon {
-            fill: $light;
-            transition: fill 0.5s;
         }
 
     }
