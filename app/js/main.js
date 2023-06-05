@@ -1,5 +1,5 @@
 $(function () {
-    $('.btn').on('click', function () {
+    $('.btn-modal').on('click', function () {
         $('body').addClass('lock');
        });
 
