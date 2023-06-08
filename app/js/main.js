@@ -7,13 +7,6 @@ $(function () {
         $('body').removeClass('lock');
        });   
 
-    $(".menu [href]").each(function () {
-        if (this.href == window.location.href) {
-            $(this).addClass("current");
-        }
-    });
-
-
     $('.hero__background-box').slick({
         fade:true,
         autoplay: true,

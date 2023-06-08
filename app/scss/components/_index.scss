@@ -168,19 +168,19 @@
         height: 100%;
         border: 1px solid $light;
         border-radius: 4px;
-        transition: border 0.5s, outline 0.5s, opacity 0.5s;
+        transition: border-color 0.5s, outline 0.5s, opacity 0.5s;
         outline: 1px solid transparent;
 
         &:hover {
+            border-color: $orange;
+
             .partners__icon {
                 fill: $orange;
             }
-
-            border: 1px solid $orange;
         }
 
         &:focus {
-            outline: 1px solid $orange;
+            outline-color: $orange;
             outline-offset: 4px;
         }
 
@@ -206,17 +206,18 @@
     padding: 94px 15px;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
 
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
-        visibility: hidden;
+
+        .modal {
+            transform: translate(-50%, -50%) scale(0);
+        }
     }
 
-    &.is-hidden .modal {
-        transform: translate(-50%, -50%) scale(0);
-    }
+
 }
 
 .modal {
@@ -231,7 +232,8 @@
     background-color: #fff;
     box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.12);
     border-radius: 6px;
-    transition: transform 0.5s, scale 0.5s, visibility 0.5s;
+    transition: transform 0.5s;
+    text-align: center;
 
     &__btn-icon {
         transition: fill 0.5s;
@@ -262,11 +264,27 @@
 
         &:active {
             box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.12);
+
+            .modal__btn-icon {
+                fill: $orange;
+            }
         }
     }
 
+    &__label {
+        display: block;
+        text-align: left;
+    }
+
+    &__label:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__label:nth-child(5) {
+        margin-bottom: 20px;
+    }
+
     &__title {
-        text-align: center;
         margin-bottom: 10px;
         line-height: 1.2;
         font-size: 20px;
@@ -285,38 +303,32 @@
     &__input-wrapper {
         display: block;
         position: relative;
-
-        &:hover {
-            .modal__icon {
-                fill: $orange;
-            }
-        }
     }
 
     &__input {
         width: 100%;
-        height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        padding-left: 45px;
-        padding-right: 15px;
+        padding: 14px 14px 14px 45px;
         outline: 1px solid transparent;
         transition: outline 0.5s;
 
         &:focus {
             outline: 1px solid $orange;
+            &+.modal__icon {
+                fill: $orange;
+            }
         }
 
-    }
-
-    &__input:not(:last-child) {
-        margin-bottom: 10px;
+        &:hover+.modal__icon {
+            fill: $orange;
+        }
     }
 
     &__icon {
         position: absolute;
         left: 12px;
-        top: 11px;
+        top: 15px;
         fill: #212121;
         transition: fill 0.5s;
     }
@@ -324,20 +336,23 @@
     &__message {
         display: block;
         width: 100%;
-        height: 120px;
+        min-height: 120px;
         padding: 12px 16px;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.01em;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         resize: none;
-        margin-bottom: 20px;
 
         &::placeholder {
-
+            font-size: 14px;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
         }
+    }
+
+    &__checkbox-input {
+        pointer-events: none;
+        opacity: 0;
     }
 
     &__checkbox {
@@ -356,11 +371,11 @@
         border: 1px solid #000;
         border-radius: 2px;
         cursor: pointer;
+        background-color: #fff;
     }
 
     &__checkbox-icon {
-        background-color: #fff;
-        opacity: 0;
+       fill: #fff;
     }
 
     &__agreemeet {
@@ -388,16 +403,6 @@
 
     .modal__checkbox-input:checked+.modal__checkbox-wrapper {
         border: none;
-    }
-
-    .modal__checkbox-input:checked+.modal__checkbox-wrapper>.modal__checkbox-icon {
-        background-color: $orange;
-        fill: #fff;
-        opacity: 1;
-        border-radius: 2px;
-    }
-
-    .modal__checkbox-input:checked+.modal__checkbox-wrapper {
         background-color: $orange;
     }
 
@@ -408,25 +413,41 @@
     }
 
     &__btn {
-        display: block;
         padding: 10px 68px;
-        margin: 0 auto;
     }
 
 }
 
 @media (max-width: 1200px) {
+    .header {
+        &__contacts {
+            display: block;
+            text-align: right;
+        }
 
+        &__contacts-link:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &__contacts-link {}
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-media {
+        display: block;
+    }
+
+    .hero {
+        &__title {}
+    }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {}
 
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 576px) {
-
-}
+@media (max-width: 576px) {}

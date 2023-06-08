@@ -17,12 +17,15 @@
     <header class="header">
         <div class="container header__container">
             <nav class="menu">
-                <a class="logo" href="index.html">
+                <a class="logo logo-default" href="index.html">
                     <img class="logo__img" src="img/logo.svg" alt="logo DolGuldur">
+                </a>
+                <a class="logo-media logo-default" href="index.html">
+                    <img class="logo__img" src="img/logo_media.svg" alt="logo DolGuldur">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="index.html">
+                        <a class="menu__link current" href="index.html">
                             Home
                         </a>
                     </li>
@@ -54,7 +57,7 @@
             </div>
         </div>
     </header>
-    <main class="main">
+     <main class="main">
         <h1 class="hidden">Web Studio DolGuldur</h1>
         <section class="hero">
             <div class="container hero__container">
@@ -77,12 +80,7 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button class="modal__btn-close" type="button" data-modal-close>
-                        <span class="hidden">close window</span>
-                        <svg class="modal__btn-icon" width="15" height="15">
-                            <use href="img/icons/icons.svg#icon-close_btn"></use>
-                        </svg>
-                    </button>
+                   
                     <form class="modal__form">
                         <h3 class="modal__title">
                             Tell about yourself and we will contact you
@@ -92,7 +90,7 @@
                                 Name
                             </span>
                             <span class="modal__input-wrapper">
-                                <input class="modal__input" type="text" required>
+                                <input class="modal__input" name="user-name" type="text" required>
                                 <svg class="modal__icon"  width="18" height="18">
                                     <use href="img/icons/icons.svg#user"></use>
                                 </svg>
@@ -103,7 +101,7 @@
                                 Phone
                             </span>
                             <span class="modal__input-wrapper">
-                                <input class="modal__input" type="tel" required>
+                                <input class="modal__input" name="user-phone" type="tel" required>
                                 <svg class="modal__icon"  width="14" height="14">
                                     <use href="img/icons/icons.svg#phone"></use>
                                 </svg>
@@ -114,7 +112,7 @@
                                 E-mail
                             </span>
                             <span class="modal__input-wrapper">
-                                <input class="modal__input" type="email" required>
+                                <input class="modal__input" name="user-e-mail" type="email" required>
                                 <svg class="modal__icon"  width="18" height="18">
                                     <use href="img/icons/icons.svg#mail"></use>
                                 </svg>
@@ -124,10 +122,10 @@
                             <span class="modal__desc">
                                 Message
                             </span>
-                           <textarea class="modal__message" placeholder="Your message"></textarea>
+                           <textarea class="modal__message" name="comment" placeholder="Your message"></textarea>
                         </label>
                         <label class="modal__checkbox">
-                            <input  class="modal__checkbox-input hidden" type="checkbox" />
+                            <input  class="modal__checkbox-input" name="agreement" type="checkbox" />
                             <span class="modal__checkbox-wrapper">
                               <svg class="modal__checkbox-icon" width="9" height="7">
                                 <use href="img/icons/icons.svg#check"></use>
@@ -139,8 +137,14 @@
                               <a class="modal__agreemeet-link" href="#" > Terms of use</a>
                             </span>
                           </label>
-                          <button class="modal__btn btn">Submit</button>
+                          <button class="modal__btn btn" type="button">Submit</button>
                     </form>
+                    <button class="modal__btn-close" type="button" data-modal-close>
+                        <span class="hidden">close window</span>
+                        <svg class="modal__btn-icon" width="15" height="15">
+                            <use href="img/icons/icons.svg#icon-close_btn"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -480,6 +484,7 @@
                 </address>
             </div>
             <div class="footer__social">
+                <h2 class="hidden">social icons</h2>
                 <h3 class="footer__title">
                     Join
                 </h3>
@@ -519,7 +524,8 @@
                     subscribe
                 </h3>
                 <label class="footer__label">
-                    <input class="footer__input" type="email" placeholder="E-mail" required>
+                    <span class="hidden">type your e-mail</span>
+                    <input class="footer__input" name="user-e-mail" type="email" placeholder="E-mail" required>
                 </label>
                 <button class="footer__btn btn" type="submit">
                     Subscribe
@@ -529,7 +535,7 @@
                 </button>
             </form>
         </div>
-    </footer>
+    </footer> 
 
     <script src="js/main.min.js"></script>
 </body>

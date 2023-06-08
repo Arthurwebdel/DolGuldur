@@ -74,7 +74,7 @@ body {
     overflow: hidden;
 }
 
-.logo {
+.logo-default {
     outline: 1px solid transparent;
     outline-offset: 2px;
     transition: outline 0.5s, opacity 0.5s;
@@ -91,6 +91,10 @@ body {
     &:active {
         opacity: 0.5;
     }
+}
+
+.logo-media {
+    display: none;
 }
 
 .social {
