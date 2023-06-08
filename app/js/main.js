@@ -1,4 +1,5 @@
 $(function () {
+   
     $('.btn-modal').on('click', function () {
         $('body').addClass('lock');
        });
@@ -14,8 +15,8 @@ $(function () {
         autoplaySpeed: 3000
     });
     var mixer = mixitup('.works__gallery');
-   $('.works__gallery').mixitup({
-
-   });
+    $('.works__gallery').mixitup({
+ 
+    });
    
 });
