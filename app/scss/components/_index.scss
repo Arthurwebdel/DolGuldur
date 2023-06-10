@@ -96,6 +96,11 @@
         text-transform: uppercase;
         margin-bottom: 10px;
         line-height: 1.2;
+        text-align: center;
+        
+        @media (min-width:768px) {
+            text-align: left;
+        }
     }
 
     &__text {
@@ -116,6 +121,10 @@
 }
 
 .services {
+display: none;
+
+@media (min-width:1200px) {
+    display: block;
     text-align: center;
     padding-top: 0;
 
@@ -142,22 +151,40 @@
         text-transform: uppercase;
     }
 }
+   
+}
 
 .team {
     background-color: #F5F4FA;
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
         justify-content: space-between;
     }
 
     &__item {
-        max-width: 270px;
-        width: 100%;
         background-color: #fff;
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
         border-radius: 0 0 4px 4px;
         padding-bottom: 42px;
+        width: 100%;
+
+        @media (min-width:768px) {
+            width: calc((100% - 1 * 30px) / 2);
+        }
+
+        @media (min-width:1200px) {
+            width: calc((100% - 3 * 30px) / 4);
+        }
+        
+        
+    }
+
+    &__img {
+        width: 100%;
+        height: calc(100% - 155px);
     }
 
     &__info {
@@ -179,11 +206,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 30px;
     }
 
     &__item {
         height: 92px;
-        width: calc((100% - 5 * 30px) / 6);
+        width: calc((100% - 1 * 30px) / 2);
+
+        @media (min-width:768px) {
+            width: calc((100% - 2 * 30px) / 3);
+        }
+        @media (min-width:1200px) {
+           
+            width: calc((100% - 5 * 30px) / 6);
+        }
+       
     }
 
     &__link {
