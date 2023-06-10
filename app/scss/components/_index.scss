@@ -67,13 +67,28 @@
 
     &__list {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+        }
     }
 
     &__item {
-        font-size: 14px;
-        max-width: 270px;
         width: 100%;
+        font-size: 14px;
+
+        @media (min-width:768px) {
+            width: calc((100% - 1 * 30px) / 2);
+        }
+
+        @media (min-width:1200px) {
+            width: calc((100% - 3 * 30px) / 4);
+        }
+
     }
 
     &__title {
