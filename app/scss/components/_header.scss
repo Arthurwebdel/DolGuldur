@@ -1,105 +1,109 @@
 .header {
     border: 1px solid #ECECEC;
+    position: relative;
 
     &__container {
         display: flex;
-        align-items: center;
-    }
-
-    &__contacts {
-        font-size: 14px;
-        margin-left: auto;
-        display: flex;
-    }
-    
-    &__contacts-icon {
-        fill: currentColor;
-        margin-right: 10px;
-        transition: fill 0.5s;
-    }
-
-    &__contacts-link {
-        color: $light;
-        line-height: 1;
-        display: flex;
-        align-items: center;
-        outline-offset: 2px;
-        border-radius: 4px;
-        outline: 1px solid transparent;
-        transition: outline 0.5s, color 0.5s;
-
-        &:not(:last-child) {
-            margin-right: 45px;
+        justify-content: space-between;
+      max-width: 480px;
+      margin: 0 auto;
+        @media (min-width:768px) {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-
-        &:hover {
-            color: $orange;
-    
-        }
-
-        &:focus {
-            outline: 1px solid $orange;
-        }
-        &:active {
-            opacity: 0.7;
-        }
-
     }
 
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__list {
-        display: flex;
-        margin-left: 89px;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 50px;
-    }
+        &__contacts {
+            display: none;
 
 
-    &__link {
-        line-height: 1.2;
-        position: relative;
-        padding: 32px 3px;
-        border-radius: 4px;
-        transition: color 0.5s, outline 0.5s, background-color 0.5s;
-        outline: 1px solid transparent;
-        
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-            width: 100%;
-            height: 4px;
-            background-color: transparent;
-            transition: background-color 0.5s;
-        }
+            @media (min-width:768px) {
+                display: block;
+                text-align: right;
+                margin-left: auto;
+            }
 
-        &:hover {
-            color: $orange;
-            &::before {
-                background-color: $orange;
-
+            @media (min-width:1200px) {
+                font-size: 14px;
+                margin-left: auto;
+                display: flex;
             }
         }
 
-        &:focus {
-            outline: 1px solid $orange;
+        &__contacts-icon {
+            fill: currentColor;
+            margin-right: 10px;
+            transition: fill 0.5s;
         }
 
-        &:active {
-           opacity: 0.7;
+        &__contacts-link {
+            margin-bottom: 10px;
+            color: $light;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            outline-offset: 2px;
+            border-radius: 4px;
+            outline: 1px solid transparent;
+            transition: outline 0.5s, color 0.5s;
+
+            &:not(:last-child) {
+                margin-right: 0px;
+            }
+
+            &:hover {
+                color: $orange;
+
+            }
+
+            &:focus {
+                outline: 1px solid $orange;
+            }
+
+            &:active {
+                opacity: 0.7;
+            }
+
+
+            @media (min-width:1200px) {
+                &:not(:last-child) {
+                    margin-right: 45px;
+
+                }
+            }
+        }
+    }
+
+
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__list {
+            display: none;
+
+            @media (min-width:768px) {
+                display: flex;
+                margin-left: 89px;
+            }
         }
 
-        &.current {
-            color: $orange;
+        &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+
+
+        &__link {
+            line-height: 1.2;
+            position: relative;
+            padding: 32px 3px;
+            border-radius: 4px;
+            transition: color 0.5s, outline 0.5s, background-color 0.5s;
+            outline: 1px solid transparent;
 
             &::before {
                 content: '';
@@ -108,10 +112,41 @@
                 bottom: -1px;
                 width: 100%;
                 height: 4px;
-                background-color: $orange;
+                background-color: transparent;
+                transition: background-color 0.5s;
+            }
 
+            &:hover {
+                color: $orange;
+
+                &::before {
+                    background-color: $orange;
+
+                }
+            }
+
+            &:focus {
+                outline: 1px solid $orange;
+            }
+
+            &:active {
+                opacity: 0.7;
+            }
+
+            &.current {
+                color: $orange;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    height: 4px;
+                    background-color: $orange;
+
+                }
             }
         }
-    }
 
-}
+    }

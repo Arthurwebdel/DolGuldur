@@ -1,4 +1,14 @@
 $(function () {
+    $('.mobile-menu__btn-open').on('click', function () {
+        $('.mobile-menu').addClass('mobile-menu--active');
+        $('body').addClass('lock');
+
+    });
+    $('.mobile-menu__btn-close').on('click', function () {
+        $('.mobile-menu').removeClass('mobile-menu--active');
+        $('body').removeClass('lock');
+
+    });
    
     $('.btn-modal').on('click', function () {
         $('body').addClass('lock');
@@ -18,5 +28,7 @@ $(function () {
     $('.works__gallery').mixitup({
  
     });
+
+   
    
 });
