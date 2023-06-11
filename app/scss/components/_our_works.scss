@@ -1,12 +1,14 @@
 .works {
     &__filter {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         margin-bottom: 50px;
-    }
+        gap: 10px;
 
-    &__item:not(:last-child) {
-        margin-right: 10px;
+        @media (min-width:600px) {
+            justify-content: center;
+        }
     }
 
     &__btn {
@@ -24,13 +26,34 @@
     }
 
     &__gallery {
+        flex-direction: column;
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+        height: calc(100% - 460px);
     }
 
     &__gallery-item {
-        width: calc((100% - 2 * 30px) / 3);
+        width: 100%;
+
+        @media (min-width:768px) {
+            width: calc((100% - 1 * 30px) / 2);
+        }
+
+        @media (min-width:1200px) {
+            width: calc((100% - 2 * 30px) / 3);
+        }
+
     }
 
     &__gallery-link {
