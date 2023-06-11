@@ -8,8 +8,9 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transform: translateY(-200%);
-    transition: transform 1.5s, opacity 1.5s,visibility 1.5s;
+    // transform: translateY(-200%);
+    top: -1000%;
+    transition:  opacity 1.5s,visibility 1.5s,top 1.5s;
 
     &__container {
         position: relative;
@@ -38,7 +39,8 @@
     }
 
     &--active {
-        transform: translateY(0%);
+        // transform: translateY(0%);
+        top: 0;
         opacity: 1;
         visibility: visible;
         pointer-events: initial;
