@@ -7,6 +7,7 @@
     left: -1px;
     top: 0;
     opacity: 0;
+    pointer-events: none;
     visibility: hidden;
     transform: translateY(-200%);
     transition: transform 1.5s, opacity 1.5s,visibility 1.5s;
@@ -41,6 +42,7 @@
         transform: translateY(0%);
         opacity: 1;
         visibility: visible;
+        pointer-events: initial;
     
     }
 
