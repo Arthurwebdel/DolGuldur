@@ -70,7 +70,8 @@
     &__contacts-link {
         display: inline-block;
         color: #F29040;
-        border: 1px solid transparent;
+        outline: 1px solid transparent;
+        outline-offset: 1px;
         transition: color 0.5s;
 
         &:hover {
@@ -78,7 +79,7 @@
         }
 
         &:focus {
-            border: 1px solid $orange;
+            outline: 1px solid $orange;
             border-radius: 4px;
         }
 
