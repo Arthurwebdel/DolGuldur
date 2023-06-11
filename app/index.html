@@ -19,10 +19,9 @@
             <nav class="menu">
                 <a class="logo logo-default" href="index.html">
                     <img class="logo__img" src="img/logo.svg" alt="logo DolGuldur">
+                    <img class="logo__img-small" src="img/logo_media.svg" alt="logo DolGuldur">
                 </a>
-                <a class="logo-small logo-default" href="index.html">
-                    <img class="logo__img" src="img/logo_media.svg" alt="logo DolGuldur">
-                </a>
+                
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a class="menu__link current" href="index.html">
@@ -42,6 +41,7 @@
                 </ul>
             </nav>
             <button class="mobile-menu__btn-open" type="button">
+                <span class="hidden">Open mobile menu</span>
                 <svg class="mobile-menu__icon-open" width="44" height="44">
                     <use href="img/icons/icons.svg#burger"></use>
                 </svg>
@@ -64,49 +64,52 @@
         <div class="mobile-menu">
             <div class="container mobile-menu__container">
                 <button class="mobile-menu__btn-close" type="button">
+                    <span class="hidden">Close mobile menu</span>
                     <svg class="mobile-menu__icon-close" width="44" height="44">
                         <use href="img/icons/icons.svg#close"></use>
                     </svg>
                 </button>
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link current" href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="our_works.html">
-                            Our Works
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="#">
-                            Contacts
-                        </a>
-                    </li>
-                </ul>
-                <div class="mobile-contacts">
-                    <div class="mobile-contacts__box">
-                        <a class="mobile-contacts__link" href="tel:+380961111111">
+                <nav class="mobile-menu__navigation">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link current" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="our_works.html">
+                                Our Works
+                            </a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__contacts">
+                    <div class="mobile-menu__contacts-box">
+                        <a class="mobile-menu__contacts-link" href="tel:+380961111111">
                             +38 096 111 11 11
                         </a>
-                        <a class="mobile-contacts__link mobile-contacts__link--light" href="mailto:info@dolguldur.com">
+                        <a class="mobile-menu__contacts-link mobile-menu__contacts-link--light" href="mailto:info@dolguldur.com">
                             info@dolguldur.com
                         </a>
 
                     </div>
-                    <ul class="mobile-contacts__social">
-                        <li class="mobile-contacts__social-item">
-                            <a class="mobile-contacts__social-link" href="#">Instagram</a>
+                    <ul class="mobile-menu__contacts-social">
+                        <li class="mobile-menu__contacts-social__item">
+                            <a class="mobile-menu__contacts-social__link" href="#">Instagram</a>
                         </li>
-                        <li class="mobile-contacts__social-item">
-                            <a class="mobile-contacts__social-link" href="#">Twitter</a>
+                        <li class="mobile-menu__contacts-social__item">
+                            <a class="mobile-menu__contacts-social__link" href="#">Twitter</a>
                         </li>
-                        <li class="mobile-contacts__social-item">
-                            <a class="mobile-contacts__social-link" href="#">Facebook</a>
+                        <li class="mobile-menu__contacts-social__item">
+                            <a class="mobile-menu__contacts-social__link" href="#">Facebook</a>
                         </li>
-                        <li class="mobile-contacts__social-item">
-                            <a class="mobile-contacts__social-link" href="#">LinkedIn</a>
+                        <li class="mobile-menu__contacts-social__item">
+                            <a class="mobile-menu__contacts-social__link" href="#">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -181,7 +184,7 @@
                             <textarea class="modal__message" name="comment" placeholder="Your message"></textarea>
                         </label>
                         <label class="modal__checkbox">
-                            <input class="modal__checkbox-input" name="agreement" type="checkbox" />
+                            <input class="modal__checkbox-input" name="agreement" type="checkbox" required/>
                             <span class="modal__checkbox-wrapper">
                                 <svg class="modal__checkbox-icon" width="9" height="7">
                                     <use href="img/icons/icons.svg#check"></use>
@@ -193,7 +196,7 @@
                                 <a class="modal__agreemeet-link" href="#"> Terms of use</a>
                             </span>
                         </label>
-                        <button class="modal__btn btn" type="button">Submit</button>
+                        <button class="modal__btn btn" type="submit">Submit</button>
                     </form>
                     <button class="modal__btn-close" type="button" data-modal-close>
                         <span class="hidden">close window</span>
@@ -540,7 +543,6 @@
                 </address>
             </div>
             <div class="footer__social">
-                <h2 class="hidden">social icons</h2>
                 <h3 class="footer__title">
                     Join
                 </h3>

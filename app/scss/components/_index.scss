@@ -421,8 +421,12 @@ display: none;
 
     &__checkbox {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         margin-bottom: 30px;
+        
+        @media (min-width:320px) and (max-width:423px) {
+            align-items: baseline;
+        }
     }
 
     &__checkbox-wrapper {
