@@ -81,7 +81,7 @@ body {
     overflow: hidden;
 }
 
-.logo-default {
+.logo {
     outline: 1px solid transparent;
     outline-offset: 2px;
     transition: outline 0.5s, opacity 0.5s;
@@ -98,23 +98,25 @@ body {
     &:active {
         opacity: 0.5;
     }
-}
 
-.logo__img {
-    display: none;
-
-    @media (min-width:1200px) {
-        display: block;
-    }
-}
-
-.logo__img-small {
-    display: block;
-
-    @media (min-width:1200px) {
+    &__img {
         display: none;
+    
+        @media (min-width:1200px) {
+            display: block;
+        }
     }
+    
+    &__img-small {
+        display: block;
+    
+        @media (min-width:1200px) {
+            display: none;
+        }
+    }
+    
 }
+
 
 .social {
     display: flex;

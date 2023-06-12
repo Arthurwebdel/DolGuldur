@@ -4,13 +4,13 @@
     height: 100vh;
     z-index: 10;
     background-color: #fff;
+    opacity: 0;
     left: -1px;
     top: 0;
-    opacity: 0;
     pointer-events: none;
-    visibility: hidden;
     transform: translateY(-200%);
-    transition: transform 1.5s, opacity 1.5s,visibility 1.5s;
+    visibility: hidden;
+    transition: transform 1.5s, opacity 1.5s, visibility 1.5s;
 
     &__container {
         position: relative;
@@ -43,7 +43,7 @@
         opacity: 1;
         visibility: visible;
         pointer-events: initial;
-    
+
     }
 
     &__item:not(:last-child) {
@@ -131,6 +131,3 @@
         color: $orange;
     }
 }
-
-
-   
