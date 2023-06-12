@@ -6,9 +6,8 @@
     background-color: #fff;
     opacity: 0;
     left: -1px;
-    top: 0;
+    top: -100vh;
     pointer-events: none;
-    transform: translateY(-200%);
     visibility: hidden;
     transition: transform 1.5s, opacity 1.5s, visibility 1.5s;
 
@@ -39,7 +38,7 @@
     }
 
     &--active {
-        transform: translateY(0%);
+        transform: translateY(100vh);
         opacity: 1;
         visibility: visible;
         pointer-events: initial;
