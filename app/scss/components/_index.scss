@@ -278,6 +278,7 @@ display: none;
 
         .modal {
             transform: translate(-50%, -50%) scale(0);
+            visibility: hidden;
         }
     }
 
@@ -296,8 +297,10 @@ display: none;
     background-color: #fff;
     box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.12);
     border-radius: 6px;
-    transition: transform 0.5s;
+    visibility: visible;
+    transition: transform 0.5s, visibility 0.5s;
     text-align: center;
+    
 
     &__btn-icon {
         transition: fill 0.5s;
