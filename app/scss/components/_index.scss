@@ -277,8 +277,9 @@ display: none;
         visibility: hidden;
 
         .modal {
-            transform: translate(-50%, -50%) scale(0);
             visibility: hidden;
+            transform: translate(-50%, -50%) scale(0);
+           
         }
     }
 
