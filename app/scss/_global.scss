@@ -107,12 +107,17 @@ body {
         }
     }
     
-    &__img-small {
+    &__img--small {
         display: block;
     
         @media (min-width:1200px) {
             display: none;
         }
+    }
+
+    &--footer {
+        margin-bottom: 23px;
+        display: inline-block;
     }
     
 }
