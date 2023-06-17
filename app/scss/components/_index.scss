@@ -162,7 +162,8 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        justify-content: space-between;
+        justify-content: center;
+     
     }
 
     &__item {
@@ -170,6 +171,7 @@
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
         border-radius: 0 0 4px 4px;
         padding-bottom: 42px;
+        max-width: 450px;
         width: 100%;
 
         @media (min-width:768px) {

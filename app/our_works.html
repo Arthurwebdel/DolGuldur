@@ -18,8 +18,8 @@
         <div class="container header__container">
             <nav class="menu">
                 <a class="logo" href="index.html">
-                    <img class="logo__img" src="img/logo.svg" alt="logo DolGuldur">
-                    <img class="logo__img logo__img--small" src="img/logo_media.svg" alt="logo DolGuldur">
+                    <img class="logo__img--big" src="img/logo.svg" alt="logo DolGuldur" width="189" height="36">
+                    <img class="logo__img" src="img/logo_media.svg" alt="logo DolGuldur" width="116" height="36">
                 </a>
                 
                 <ul class="menu__list">
@@ -39,6 +39,57 @@
                         </a>
                     </li>
                 </ul>
+                <div class="mobile-menu">
+                    <div class="container mobile-menu__container">
+                        <button class="mobile-menu__btn-close" type="button">
+                            <svg class="mobile-menu__icon-close" width="44" height="44">
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link " href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link current" href="our_works.html">
+                                    Our Works
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#">
+                                    Contacts
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mobile-menu__contacts">
+                            <div class="mobile-menu__contacts-box">
+                                <a class="mobile-menu__contacts-link" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                                <a class="mobile-menu__contacts-link mobile-menu__contacts-link--light" href="mailto:info@dolguldur.com">
+                                    info@dolguldur.com
+                                </a>
+        
+                            </div>
+                            <ul class="mobile-menu__contacts-social">
+                                <li class="mobile-menu__contacts-social__item">
+                                    <a class="mobile-menu__contacts-social__link" href="#">Instagram</a>
+                                </li>
+                                <li class="mobile-menu__contacts-social__item">
+                                    <a class="mobile-menu__contacts-social__link" href="#">Twitter</a>
+                                </li>
+                                <li class="mobile-menu__contacts-social__item">
+                                    <a class="mobile-menu__contacts-social__link" href="#">Facebook</a>
+                                </li>
+                                <li class="mobile-menu__contacts-social__item">
+                                    <a class="mobile-menu__contacts-social__link" href="#">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <button class="mobile-menu__btn-open" type="button">
                 <svg class="mobile-menu__icon-open" width="44" height="44">
@@ -58,57 +109,6 @@
                     </svg>
                     +38 096 111 11 11
                 </a>
-            </div>
-        </div>
-        <div class="mobile-menu">
-            <div class="container mobile-menu__container">
-                <button class="mobile-menu__btn-close" type="button">
-                    <svg class="mobile-menu__icon-close" width="44" height="44">
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link " href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link current" href="our_works.html">
-                            Our Works
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="#">
-                            Contacts
-                        </a>
-                    </li>
-                </ul>
-                <div class="mobile-menu__contacts">
-                    <div class="mobile-menu__contacts-box">
-                        <a class="mobile-menu__contacts-link" href="tel:+380961111111">
-                            +38 096 111 11 11
-                        </a>
-                        <a class="mobile-menu__contacts-link mobile-menu__contacts-link--light" href="mailto:info@dolguldur.com">
-                            info@dolguldur.com
-                        </a>
-
-                    </div>
-                    <ul class="mobile-menu__contacts-social">
-                        <li class="mobile-menu__contacts-social__item">
-                            <a class="mobile-menu__contacts-social__link" href="#">Instagram</a>
-                        </li>
-                        <li class="mobile-menu__contacts-social__item">
-                            <a class="mobile-menu__contacts-social__link" href="#">Twitter</a>
-                        </li>
-                        <li class="mobile-menu__contacts-social__item">
-                            <a class="mobile-menu__contacts-social__link" href="#">Facebook</a>
-                        </li>
-                        <li class="mobile-menu__contacts-social__item">
-                            <a class="mobile-menu__contacts-social__link" href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </header>
@@ -356,11 +356,14 @@
         </section>
     </main>
     <footer class="footer">
-        <h2 class="hidden">Social contacts</h2>
+        <h2 class="hidden"> Contact, social and suscribe information</h2>
         <div class="container footer__container">
             <div class="footer__contacts-info">
-                <a class="logo logo--footer" href="#">
-                    <img class="logo__img--footer" src="img/logo__white.svg" alt="logo">
+                <h3 class="hidden">
+                    Contact information
+                </h3>
+                <a class="logo" href="#">
+                    <img class="logo__img logo__img--footer" src="img/logo__white.svg" alt="logo" width="189" height="36">
                 </a>
                 <address class="footer__location-info">
                     <span class="footer__location">

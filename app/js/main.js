@@ -1,11 +1,11 @@
 $(function () {
     $('.mobile-menu__btn-open').on('click', function () {
-        $('.mobile-menu').addClass('mobile-menu--active');
+        $('.mobile-menu').addClass('active');
         $('body').addClass('lock');
 
     });
     $('.mobile-menu__btn-close').on('click', function () {
-        $('.mobile-menu').removeClass('mobile-menu--active');
+        $('.mobile-menu').removeClass('active');
         $('body').removeClass('lock');
 
     });
