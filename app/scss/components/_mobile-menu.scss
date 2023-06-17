@@ -100,7 +100,7 @@
             color: $orange;
         }
 
-        @media (max-width:768px) and (orientation:landscape) {
+        @media (orientation:landscape) {
             font-size: 26px;
             padding: 8px 0;
         }
@@ -109,8 +109,8 @@
     &__contacts-box {
         margin-bottom: 50px;
 
-        @media (max-width:768px) and (orientation:landscape) {
-            margin-bottom: 25px;
+        @media (orientation:landscape) {
+            margin-bottom: 7px;
         }
     }
 
@@ -128,7 +128,7 @@
 
         }
 
-        @media (max-width:768px) and (orientation:landscape) {
+        @media (orientation:landscape) {
             font-size: 18px;
         }
 
