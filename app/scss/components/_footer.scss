@@ -63,6 +63,7 @@
         outline: 1px solid transparent;
         outline-offset: 1px;
         transition: color 0.5s;
+        padding: 7px 0;
 
         &:hover {
             color: $orange;
@@ -76,10 +77,6 @@
         &:active {
             opacity: 0.6;
         }
-    }
-
-    &__contacts-link:not(:last-child) {
-        margin-bottom: 10px;
     }
 
     &__title {
