@@ -29,6 +29,8 @@
 
     &__btn-open {
         display: block;
+        width: 44px;
+        height: 44px;
 
         &:hover {
             .mobile-menu__icon-open {
@@ -54,6 +56,8 @@
     }
 
     &__btn-close {
+        width: 44px;
+        height: 44px;
         position: absolute;
         right: 15px;
         top: 7px;
