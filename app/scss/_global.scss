@@ -98,14 +98,6 @@ body {
     &:active {
         opacity: 0.5;
     }
-
-    &__img--big {
-        display: none;
-    
-        @media (min-width:1200px) {
-            display: block;
-        }
-    }
     
     &__img {
         display: block;
@@ -115,7 +107,15 @@ body {
         }
     }
 
-    &__img--footer {
+    &__img--big {
+        display: none;
+    
+        @media (min-width:1200px) {
+            display: block;
+        }
+    }
+
+    &__img--white {
         margin-bottom: 23px;
         display: inline-block;
     }
